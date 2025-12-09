@@ -80,12 +80,12 @@ public class Dog extends Pet implements PetImpl {
                 language = "The dog goes woof! woof!";
                 break;
             case WILD:
-                language = "The dog goes grr! grr!";
+                language = "The dog goes Grr! Grr!";
                 break;
             default:
                 language = "The dog goes " + super.getPetType().speak + "! " + super.getPetType().speak + "!";
         }
-       return language;
+        return language;
     }
 
     private String numberOfLegs()
@@ -117,11 +117,11 @@ public class Dog extends Pet implements PetImpl {
     public String toString()
     {
         return super.toString() +
-               "The dog is " +  super.animalType + "!\n" +
-               "The dogs breed is " + this.getBreed() + "!\n" +
-               this.dogHypoallergenic() + "!\n" +
-               this.speak() + "\n" +
-               this.numberOfLegs();
+                "The dog is " +  super.animalType + "!\n" +
+                "The dogs breed is " + this.getBreed() + "!\n" +
+                this.dogHypoallergenic() + "!\n" +
+                this.speak() + "\n" +
+                this.numberOfLegs();
     }
 
 
